@@ -77,7 +77,6 @@
             const indexToRemove = this.favoriteBooks.indexOf(bookId);
             this.favoriteBooks.splice(indexToRemove, 1);
           }
-          console.log(this.favoriteBooks);
         }
       });
 
@@ -89,7 +88,6 @@
           const indexToRemove = this.filters.indexOf(event.target);
           this.filters.splice(indexToRemove, 1);
         }
-        console.log(this.filters);
         this.filterBooks();
       });
     }
@@ -122,7 +120,7 @@
     }
   }
  
-  const app = new BookList();
+  new BookList();
 
   
 }
